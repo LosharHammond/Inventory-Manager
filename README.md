@@ -74,8 +74,8 @@
 Clone this repository to your desired folder:
 
 ```bash
-$ git clone https://github.com/Mylo16/inventory-management.git
-$ cd Inventory-Management
+$ git clone https://github.com/LosharHammond/Inventory-ManageR.git
+$ cd Inventory-Manager
 ```
 
 
@@ -94,16 +94,15 @@ $ npm install
 Clone this repository to your desired folder:
 ```
 cd my folder
-git clone  https://github.com/Mylo16/inventory-management.git
+git clone  https://github.com/LosharHammond/Inventory-Manager.git
 ```
 
 ## Author <a name="author"></a>
 
-👤 **Eric Antwi**
+👤 **Loshar Hammond**
 
-- GitHub: [@Mylo16](https://github.com/Mylo16)
-- Twitter: [Eric](https://twitter.com/EricAntwi384)
-- LinkedIn: [Eric](https://www.linkedin.com/in/ericopokuantwi)
+- GitHub: [@LosharHammond](https://github.com/LosharHammond)
+- LinkedIn: [Hammond](https://www.linkedin.com/in/losharhammond)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
