@@ -1,0 +1,134 @@
+:root {
+  --primary-bg: #21263c;
+  --secondary-bg: #408dfb;
+  --hover-bg: #cccccc41;
+  --accent-bg: rgba(0, 0, 0, 0.1);
+  --yellow-bg: #fff8ee;
+
+}
+
+.dashboard {
+  width: 80%;
+  margin: auto;
+}
+
+.dashboard-widgets {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 1em;
+}
+
+.inventory-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 3em;
+  border-radius: 20px;
+  width: 47.5%;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.377);
+  background-color: var(--yellow-bg);
+}
+
+.inventory-widget img {
+  width: 200px;
+}
+
+.low-pic {
+  width: 300px;
+  border-radius: 10px;
+  background: var(--accent-bg);
+}
+
+.inventory-header,
+.low-stock-header {
+  font-size: 18px;
+}
+
+.inventory-value {
+  font-size: 3rem;
+  color: var(--primary-bg);
+}
+
+.low-stock-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  border-radius: 20px;
+  width: 70%;
+  margin: 1em auto;
+  padding: 1em;
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.336);
+  background-color: var(--yellow-bg);
+}
+
+.stock {
+  display: flex;
+  width: 77%;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  justify-content: center;
+}
+
+.stock.details {
+  position: relative;
+  padding: 0;
+}
+
+.stock.details::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(32, 15, 78) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.stock.head {
+  background: var(--accent-bg);
+  color: rgb(14, 14, 68);
+  justify-content: center;
+}
+
+.stock-prop {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.stock-value {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    width: 100%;
+  }
+  .dashboard-widgets {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    width: 90%;
+    margin: 2em auto;
+  }
+
+  .inventory-widget {
+    width: 100%;
+  }
+
+  .low-stock-widget {
+    width: 85%;
+  }
+
+  .dashboard-header {
+    text-align: center;
+  }
+}

@@ -1,0 +1,230 @@
+:root {
+  --primary-bg: #21263c;
+  --secondary-bg: #408dfb;
+  --hover-bg: #cccccc41;
+  --accent-bg: rgba(0, 0, 0, 0.1);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 4em;
+}
+
+.app-container {
+  padding-left: 250px;
+}
+
+.content {
+  flex: 1;
+  padding: 16px;
+}
+
+/* Sidebar styling for desktop */
+
+.links {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    background-color: var(--primary-bg);
+    width: 250px;
+    z-index: 999;
+  }
+  
+  .links a {
+    color: wheat;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    margin-bottom: 1em;
+  }
+  
+  .side-link:hover {
+    background: #cccccc41;
+  }
+
+  .side-link.active {
+    /* background-color: rgb(10, 10, 66); */
+    background-color: var(--secondary-bg);
+    /* background-color: rgb(2, 75, 2); */
+  }
+
+/* Trigram for mobile */
+.mobile-nav .trigram {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  padding: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.logo.mobile {
+  display: none;
+}
+
+.logo {
+  background-color: var(--hover-bg);
+  background-color: rgb(8, 3, 83);
+  padding: 0 0.5em;
+}
+
+.logo img {
+  width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding-left: 0;
+    position: relative;
+    padding-bottom: 200px;
+    min-height: 75vh;
+  }
+
+  .logo {
+    display: none;
+    position: absolute;
+  }
+
+  .logo.mobile {
+    display: block;
+    background-color: transparent;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(9, 9, 58, 0.342);
+    color: white;
+    padding: 1.5rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+  }
+
+  .nav.bg {
+    background-color: var(--primary-bg);
+    position: fixed;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+
+  .bg .menu-icon {
+    position: fixed;
+    right: 1rem;
+    top: 25px;
+
+  }
+  
+  .icon-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 0;
+    background-color: #333;
+    transition: all 0.4s ease;
+  }
+
+  .bg .icon-bar {
+    background-color: wheat;
+  }
+  
+  .rotate {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .rotate-reverse {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -10px;
+  }
+
+  /* .mobile-nav .trigram {
+    display: inline-block;
+  } */
+
+  .content {
+    margin-left: 0;
+  }
+
+  .side-links {
+    padding-inline-start: 0%;
+    margin-block-start: 0;
+    width: 100%;
+  }
+  
+  .side-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1em;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+  }
+  
+  .link {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.5em;
+  }
+  
+  .links {
+    display: none;
+  }
+  
+  .links.open {
+    display: block;
+    position: fixed;
+    top: 50px;
+    height: 100vh;
+    left: 53%;
+    background: var(--primary-bg);
+    width: 50%;
+    z-index: 999;
+    transition: transform 0.3s ease;
+  }
+  
+  .links a {
+    color: wheat;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    width: 100%;
+  }
+  
+  .side-link:hover {
+    background: var(--hover-bg);
+  }  
+}
